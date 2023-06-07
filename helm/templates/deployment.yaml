@@ -45,12 +45,12 @@ spec:
             - name: MONGO_INITDB_ROOT_USERNAME
               valueFrom:
                 secretKeyRef:
-                  name: file-content-secret
+                  name: file-content
                   key: file-content-root-username
             - name: MONGO_INITDB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: file-content-secret
+                  name: file-content
                   key: file-content-root-password
           livenessProbe:
             exec:
