@@ -7,7 +7,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: longhorn
-  volumeName: file-content-pv
   resources:
     requests:
       storage: 500Mi
