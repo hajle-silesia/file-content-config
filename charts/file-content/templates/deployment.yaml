@@ -52,12 +52,6 @@ spec:
                 secretKeyRef:
                   name: file-content
                   key: file-content-root-password
-          startupProbe:
-            exec:
-              command:
-                - mongosh
-                - --eval
-                - "db.runCommand('ping')"
           livenessProbe:
             exec:
               command:
