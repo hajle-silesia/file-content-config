@@ -8,3 +8,8 @@ mongodb:
   service:
     ports:
       mongodb: 80
+  extraEnvVars:
+    - name: MONGO_INITDB_ROOT_USERNAME
+      value: $(MONGODB_ROOT_USER)
+    - name: MONGO_INITDB_ROOT_PASSWORD
+      value: $(MONGODB_ROOT_PASSWORD)
