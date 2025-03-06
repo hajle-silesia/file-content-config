@@ -5,3 +5,6 @@ mongodb:
   persistence:
     mountPath: /data/db
     size: 1Gi
+  service:
+    ports:
+      mongodb: 80
